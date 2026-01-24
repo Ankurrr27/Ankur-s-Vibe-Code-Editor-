@@ -13,6 +13,7 @@ export const getPlaygroundById = async (id: string) => {
     return await db.playground.findUnique({
       where: { id },
       select: {
+        title:true,
         templateFiles: {
           select: { content: true },
         },

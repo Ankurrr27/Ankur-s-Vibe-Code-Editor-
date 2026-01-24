@@ -5,7 +5,7 @@ import { getPlaygroundById, saveUpdatedCode } from "../actions";
 
 interface PlaygroundData {
   id: string;
-  name?: string;
+  title?: string;
   [key: string]: any;
 }
 
@@ -76,7 +76,7 @@ export const usePlayground = (id: string): UsePlaygroundReturn => {
   const saveTemplateData = useCallback(
     async (data: TemplateFolder) => {
       try {
-        await SaveUpdatedCode(id, data);
+        await saveUpdatedCode(id, data);
         setTemplateData(data);
         toast.success("Changes saved successfully");
       } catch (error) {
