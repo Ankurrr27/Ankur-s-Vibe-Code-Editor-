@@ -1,4 +1,4 @@
-"use client"
+"use client" // means for frontend 
 
 import { Button } from "@/components/ui/button"
 

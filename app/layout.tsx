@@ -49,7 +49,7 @@ export default async function RootLayout({
               </div>
 
             </div>
-            {children}
+            {/* {children} */}
           </ThemeProvider>
       </body>
     </html>
